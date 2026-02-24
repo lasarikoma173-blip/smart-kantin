@@ -1,0 +1,7 @@
+{
+  "name": "smart-kantin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

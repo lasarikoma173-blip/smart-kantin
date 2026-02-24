@@ -1,0 +1,32 @@
+/* Custom Global Style untuk Tampilan Modern */
+ion-content {
+  --background: #f8fafc; /* Abu-abu sangat muda biar bersih */
+}
+
+ion-card {
+  border-radius: 20px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+  border: none !important;
+  margin: 12px 16px !important;
+}
+
+ion-button {
+  --border-radius: 12px !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  letter-spacing: 0;
+}
+
+.modern-input {
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  --padding-start: 15px;
+  border: 1px solid #e2e8f0;
+}
+
+.price-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2ecc71;
+}

@@ -1,0 +1,22 @@
+{
+  "short_name": "smartkantin",
+  "name": "smartkantin",
+  "icons": [
+    {
+      "src": "OIP.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "OIP.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3880ff",
+  "background_color": "#ffffff"
+}
