@@ -2,7 +2,7 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ master ] # Ganti 'main' jika nama branch utama lo 'master'
+    branches: [ master ] # Sudah gue set ke master sesuai branch lo
 
 jobs:
   build:
@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: Checkout Source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Update ke v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4 # Update ke v4
         with:
           node-version: 18
 
@@ -26,19 +26,19 @@ jobs:
       - name: Sync Capacitor
         run: npx cap sync android
 
-      - name: Setup Java (Penting buat Android)
-        uses: actions/setup-java@v3
+      - name: Setup Java
+        uses: actions/setup-java@v4 # Update ke v4
         with:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Build APK (Proses Masak)
+      - name: Build APK
         run: |
           cd android
           ./gradlew assembleDebug
 
       - name: Simpan Hasil APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4 # Update ke v4 (Ini penyebab error tadi)
         with:
           name: SmartKantin-V1
           path: android/app/build/outputs/apk/debug/app-debug.apk
