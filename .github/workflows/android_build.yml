@@ -2,7 +2,7 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ main ] # Ganti 'main' jika nama branch utama lo 'master'
+    branches: [ master ] # Ganti 'main' jika nama branch utama lo 'master'
 
 jobs:
   build:
