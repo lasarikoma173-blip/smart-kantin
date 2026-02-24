@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22 # <--- INI YANG HARUS DIUBAH JADI 22
+          node-version: 22
 
       - name: Install Dependencies
         run: npm install
@@ -31,6 +31,9 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '17'
+
+      - name: Beri Izin Akses Gradle (Penting!)
+        run: chmod +x android/gradlew
 
       - name: Build APK
         run: |
